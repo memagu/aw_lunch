@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom
+credentials.py
+test
+image_output/*
+src/config/aw_lunch_uuid_and_cookie.json
+
