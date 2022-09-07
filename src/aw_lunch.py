@@ -84,7 +84,7 @@ class AwLunch:
                 time.sleep(10)
                 continue
 
-            if True or any(word in ["Måndag", "måndag", "Monday", "monday"] for word in today):
+            if any(word in ["Måndag", "måndag", "Monday", "monday"] for word in today):
                 data = self.get_menu("weeks")
                 self.generate_image(data)
                 self.bot.upload_photo("../image_output/out.jpg")
