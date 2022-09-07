@@ -12,7 +12,7 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-sys.path.append("../")
+sys.path.append("../../")
 from credentials import InstagramBot
 
 
@@ -90,6 +90,7 @@ class AwLunch:
                 self.bot.upload_photo("../image_output/out.jpg")
                 while not os.path.exists("../image_output/out.jpg.REMOVE_ME"):
                     pass
+
                 os.remove("../image_output/out.jpg.REMOVE_ME")
 
             data = self.get_menu()
@@ -97,6 +98,7 @@ class AwLunch:
             self.bot.upload_photo("../image_output/out.jpg")
             while not os.path.exists("../image_output/out.jpg.REMOVE_ME"):
                 pass
+
             os.remove("../image_output/out.jpg.REMOVE_ME")
 
             latest_title = today
