@@ -109,8 +109,8 @@ def generate_image(data: List[Tuple[str, str]], save_path: str = IMG_OUTPUT_DIR)
 
 def main() -> None:
     if not os.path.exists("'../image_output/out.jpg"):
-        os.mkdir("./image_output")
-        open("./image_output/out.jpg", "w").close()
+        os.mkdir("../image_output")
+        open("../image_output/out.jpg", "w").close()
             
     
     if os.path.exists("./config/aw_lunch_uuid_and_cookie.json"):
