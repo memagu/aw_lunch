@@ -1,5 +1,6 @@
 # aw_lunch
-An Instagram bot for daily posting of Anna Whitlock's Highschool lunch
+An Instagram that uploads the lunch meny daily.
+Works for any school at [skolmaten.se](https://skolmaten.se/) altough minor changes to the code is required.
 
 # Requirements:
 - ```pip install feedparser```
