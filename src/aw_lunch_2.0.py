@@ -47,14 +47,14 @@ def wrap_text(text: str, font: ImageFont = None, line_length: int = IMG_WIDTH - 
     return '\n'.join(lines)
 
 
-def rainbow(angle):
+def rainbow(angle: float) -> Tuple[int, int, int]:
     r = math.sin(angle) * 0.5 + 0.5
     g = math.sin(angle + 2 * math.pi / 3) * 0.5 + 0.5
     b = math.sin(angle + 4 * math.pi / 3) * 0.5 + 0.5
-    return tuple(map(lambda x: x * 255, (r, g, b)))
+    return tuple(map(lambda x: math.floor(x * 255), (r, g, b)))
 
 
-def gradient(start_color: Vec3, end_color: Vec3):
+def gradient(start_color: Vec3, end_color: Vec3) -> Image.Image:
     gradient_vector = Vec2(IMG_WIDTH, IMG_HEIGHT)
     gradient_nvector = gradient_vector / gradient_vector.magnitude()
 
@@ -107,7 +107,7 @@ def generate_image(data: List[Tuple[str, str]], save_path: str = IMG_OUTPUT_DIR)
     img.save(save_path, subsampling=4, quality=100)
 
 
-def main():
+def main() -> None:
     if os.path.exists("./config/aw_lunch_uuid_and_cookie.json"):
         os.remove("./config/aw_lunch_uuid_and_cookie.json")
 
