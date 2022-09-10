@@ -108,8 +108,9 @@ def generate_image(data: List[Tuple[str, str]], save_path: str = IMG_OUTPUT_DIR)
 
 
 def main() -> None:
-    if not os.path.exists("'../image_output/out.jpg"):
-        os.mkdir("../image_output")
+    if not os.path.exists("../image_output/out.jpg"):
+        if not os.path.exists("../image_output"):
+            os.mkdir("../image_output")
         open("../image_output/out.jpg", "w").close()
             
     
@@ -122,6 +123,11 @@ def main() -> None:
     latest_title = ""
     while True:
         data = get_data()
+        print(data)
+        if not data:
+            time.sleep(10)
+            continue
+
         today = data[0][0]
 
         if today == latest_title:
