@@ -17,7 +17,7 @@ from PIL import ImageDraw
 from melvec.vec2 import Vec2
 from melvec.vec3 import Vec3
 
-sys.path.append("../")
+sys.path.append("../../")
 from credentials import InstagramBot
 
 IMG_WIDTH = 1080
