@@ -134,7 +134,7 @@ def main() -> None:
             time.sleep(10)
             continue
 
-        if any(word.lower() in ["måndag", "monday"] for word in today):
+        if any(word.lower() in ["måndag", "monday"] for word in today.split()):
             data = get_data("weeks")
             generate_image(data)
             bot.upload_photo(IMG_OUTPUT_DIR)
