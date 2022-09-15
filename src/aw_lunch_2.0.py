@@ -14,8 +14,8 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-from melvec.vec2 import Vec2
-from melvec.vec3 import Vec3
+from melvec import Vec2
+from melvec import Vec3
 
 sys.path.append("../../")
 from credentials import InstagramBot
