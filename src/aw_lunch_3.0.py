@@ -185,9 +185,9 @@ def main() -> None:
             continue
 
         last_day = published
-        print(f"RSS feed updated. Title: {data[0][0]}")
+        print(f"RSS feed updated. Data: {data}")
 
-        if published.tm_wday != 0:
+        if published.tm_wday == 0:
             data = get_data(FEED_URL, "weeks")
 
         print("Generating image...")
