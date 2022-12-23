@@ -11,8 +11,8 @@ import feedparser
 import instabot
 
 from PIL import Image
-from PIL import ImageFont
 from PIL import ImageDraw
+from PIL import ImageFont
 
 from melvec import Vec2
 from melvec import Vec3
