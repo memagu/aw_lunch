@@ -4,5 +4,5 @@ Works for any school at [skolmaten.se](https://skolmaten.se/) altough minor chan
 
 # Requirements:
 - ```pip install feedparser```
-- ```pip install instabot```
+- ```pip install instagrapi```
 - ```pip install melvec```
