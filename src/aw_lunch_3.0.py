@@ -17,7 +17,6 @@ from credentials import InstagramBot
 FEED_URL = "https://skolmaten.se/anna-whitlocks-gymnasium/rss/"
 FONT_PATH = Path("../resources/CaviarDreams.ttf")
 IMAGE_OUTPUT_PATH = Path("../image_output/out.jpg")
-IMAGE_FILE_NAME = "out.jpg"
 IMAGE_WIDTH = 1080
 IMAGE_HEIGHT = 1080
 IMAGE_OUTER_PADDING = 96
