@@ -11,7 +11,7 @@ from instagrapi import Client
 from melvec import Vec2, Vec3
 from PIL import Image, ImageDraw, ImageFont
 
-sys.path.append("../../credentials.py")
+sys.path.append("../../")
 from credentials import InstagramBot
 
 FEED_URL = "https://skolmaten.se/anna-whitlocks-gymnasium/rss/"
